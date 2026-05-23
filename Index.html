@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Curso Virtual - Grado 12 Optativo</title>
+    <style>
+        :root {
+            --primary-color: #A30015; /* Rojo institucional */
+            --secondary-color: #f4f4f4;
+            --text-color: #333;
+            --border-color: #ccc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Tabs Styling */
+        .tabs {
+            display: flex;
+            background-color: #e0e0e0;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            background-color: inherit;
+            color: var(--text-color);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tab-button:hover {
+            background-color: #d0d0d0;
+        }
+
+        .tab-button.active {
+            background-color: white;
+            color: var(--primary-color);
+            border-top: 3px solid var(--primary-color);
+        }
+
+        /* Tab Content Styling */
+        .tab-content {
+            display: none;
+            padding: 30px;
+            animation: fadeIn 0.5s;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+
+        .cite {
+            font-size: 0.85em;
+            color: #666;
+            vertical-align: super;
+        }
+
+        /* Moodle Simulation Styling */
+        .moodle-header {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .module-card {
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .module-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .module-body {
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .resource {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px;
+            background-color: #f9f9f9;
+            border: 1px dashed #ccc;
+            border-radius: 4px;
+        }
+
+        .resource span {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Propuesta de Curso Virtual: Grado 12 Optativo</h1>
+        <p>Maestría en Administración Educativa - Universidad Manuela Beltrán</p>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'fundamentacion')">1. Fundamentación y Diseño</button>
+            <button class="tab-button" onclick="openTab(event, 'simulacion')">2. Simulación del Curso (Moodle)</button>
+        </div>
+
+        <div id="fundamentacion" class="tab-content active">
+            <h2>1. Identificación del Curso</h2>
+            <ul>
+                <li><strong>Nombre del curso:</strong> Competencias Digitales y Proyecto de Vida[cite: 13].</li>
+                <li><strong>Población objetivo:</strong> Estudiantes de Instituciones Educativas Distritales de Tenjo[cite: 13].</li>
+                <li><strong>Duración y Modalidad:</strong> 16 semanas en modalidad virtual[cite: 13].</li>
+                <li><strong>Plataforma seleccionada:</strong> Moodle (LMS)[cite: 13].</li>
+            </ul>
+
+            <h2>2. Abordaje Pedagógico</h2>
+            <p>La propuesta se fundamenta en el modelo pedagógico constructivista, el cual promueve la participación activa del estudiante en la construcción de su conocimiento[cite: 15]. El curso incorpora actividades colaborativas, aprendizaje basado en proyectos y el uso de recursos multimedia para favorecer experiencias significativas de aprendizaje[cite: 16].</p>
+
+            <h2>3. Metodología de Diseño</h2>
+            <p>Se toma como referencia la propuesta metodológica de Marciniak (2017), la cual contempla las fases de análisis, diseño, desarrollo, implementación y evaluación del curso virtual[cite: 18]. Esta metodología permite garantizar coherencia entre los objetivos de aprendizaje, las actividades pedagógicas, los recursos tecnológicos y la evaluación[cite: 19].</p>
+
+            <h2>4. Etapas del Diseño E-Learning</h2>
+            <ul>
+                <li><strong>Análisis:</strong> identificación de necesidades de la institución y características de los estudiantes[cite: 21].</li>
+                <li><strong>Diseño:</strong> definición de competencias, contenidos, actividades y recursos[cite: 22].</li>
+                <li><strong>Desarrollo:</strong> creación de materiales digitales, foros, videos y guías[cite: 22].</li>
+                <li><strong>Implementación:</strong> puesta en marcha del curso en la plataforma Moodle[cite: 23].</li>
+                <li><strong>Evaluación:</strong> seguimiento continuo mediante rúbricas, autoevaluación y retroalimentación[cite: 23].</li>
+            </ul>
+
+            <h2>5. Parámetros de Calidad</h2>
+            <p>La propuesta atiende criterios de calidad académica, pedagógica y tecnológica establecidos por el Ministerio de Educación Nacional y diferentes modelos de evaluación de cursos virtuales[cite: 28]. Se prioriza la accesibilidad, la organización de contenidos, la claridad en las instrucciones y el acompañamiento permanente al estudiante[cite: 29].</p>
+
+            <h2>6. Conclusiones e Impacto</h2>
+            <p>La propuesta de diseño de un curso virtual para el grado 12 optativo permite fortalecer los procesos de enseñanza y aprendizaje mediante estrategias pedagógicas innovadoras y el uso adecuado de herramientas tecnológicas[cite: 31]. Asimismo, favorece el desarrollo de competencias digitales y el aprendizaje autónomo en los estudiantes[cite: 32]. De igual manera, el uso de plataformas LMS facilita el seguimiento, la evaluación y la interacción constante entre docentes y estudiantes[cite: 33]. Finalmente, esta propuesta puede generar un impacto positivo en la comunidad educativa, al contribuir con procesos educativos más flexibles, inclusivos y acordes con las necesidades de la educación contemporánea[cite: 33].</p>
+        </div>
+
+        <div id="simulacion" class="tab-content">
+            <div class="moodle-header">
+                <h2>📚 Entorno Virtual de Aprendizaje (Simulación LMS)</h2>
+                <p><strong>Curso:</strong> Competencias Digitales y Proyecto de Vida (Grado 12)</p>
+                <p><strong>Institución:</strong> IED Tenjo | <strong>Plataforma:</strong> Moodle</p>
+            </div>
+
+            <div class="module-card">
+                <div class="module-header">Módulo 0: Inducción y Acogida</div>
+                <div class="module-body">
+                    <div class="resource"><span>📄</span> Guía de navegación del curso (PDF)</div>
+                    <div class="resource"><span>🗣️</span> Foro de presentación: Construyendo nuestro proyecto de vida</div>
+                    <div class="resource"><span>📋</span> Encuesta de diagnóstico de competencias digitales</div>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-header">Módulo 1: Ciudadanía Digital y Herramientas Web</div>
+                <div class="module-body">
+                    <p><em>Competencia:</em> Emplear herramientas de comunicación sincrónica y asincrónica para fortalecer el aprendizaje autónomo.</p>
+                    <div class="resource"><span>🎬</span> Video interactivo: ¿Qué es la ciudadanía digital?</div>
+                    <div class="resource"><span>📊</span> Infografía: Herramientas en la nube para el trabajo colaborativo</div>
+                    <div class="resource"><span>🧩</span> Actividad gamificada: Misión "Escudo de Privacidad"</div>
+                    <div class="resource"><span>📝</span> Tarea: Creación de un portafolio digital en línea</div>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-header">Módulo 2: Orientación Socio-Ocupacional y Educación Superior</div>
+                <div class="module-body">
+                    <p><em>Competencia:</em> Diseñar una ruta de transición hacia la educación superior o el ámbito laboral.</p>
+                    <div class="resource"><span>🎙️</span> Podcast: Historias de egresados IED Tenjo</div>
+                    <div class="resource"><span>👥</span> Wiki colaborativa: Mapeo de universidades y programas técnicos/tecnológicos</div>
+                    <div class="resource"><span>✅</span> Evaluación formativa: Rúbrica de autoevaluación del proyecto de vida</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Ocultar todos los contenidos de las pestañas
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+
+            // Eliminar la clase "active" de todos los botones
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostrar la pestaña actual y añadir "active" al botón que la abrió
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>
